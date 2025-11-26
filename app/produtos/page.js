@@ -1,5 +1,5 @@
 import { Produto, Fornecedor } from "../../database/tables";
-
+import "../css/tabelaCliente.css";
 async function ListagemProdutos() {
   // Inclui o fornecedor junto com o produto (JOIN)
   const produtos = await Produto.findAll({

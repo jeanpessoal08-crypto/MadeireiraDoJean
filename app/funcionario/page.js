@@ -1,5 +1,5 @@
 import { Funcionario } from "../../database/tables";
-
+import "../css/tabelaCliente.css";
 async function ListagemFuncionarios() {
   const funcionarios = await Funcionario.findAll();
 
