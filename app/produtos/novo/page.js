@@ -11,7 +11,7 @@ async function insereProduto(formData) {
     FornecedorId: parseInt(formData.get('fornecedorId'), 10)
   };
   await Produto.create(dados);
-  redirect('/produto');
+  redirect('/produtos');
 }
 
 // Função para buscar fornecedores (executada no servidor)

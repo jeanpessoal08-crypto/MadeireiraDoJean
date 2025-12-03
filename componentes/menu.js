@@ -25,7 +25,7 @@ export default function Menu() {
       <a href="/cliente" className="menu-link">Clientes</a>
       <a href="/funcionario" className="menu-link">Funcionários</a>
       <a href="/fornecedor" className="menu-link">Fornecedores</a>
-      <a href="/produto" className="menu-link">Produtos</a>
+      <a href="/produtos" className="menu-link">Produtos</a>
       <a href="/venda" className="menu-link">Vendas</a>
       
     </div>
