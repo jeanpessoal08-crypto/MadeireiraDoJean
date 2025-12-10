@@ -1,0 +1,102 @@
+/* Conteúdo do arquivo: app/css/tabelaCliente.css */
+
+/* Cores do Tema */
+:root {
+  --cor-madeira-escura: #4e342e; /* Marrom escuro, como madeira */
+  --cor-verde-musgo: #558b2f; /* Verde escuro, como musgo ou floresta */
+  --cor-fundo-claro: #f5f5dc; /* Bege claro (cor de papel ou tronco claro) */
+  --cor-texto-claro: #ffffff;
+  --cor-texto-escuro: #333333;
+}
+
+/* Estilo Geral do Container */
+div {
+  font-family: 'Georgia', serif; /* Fonte que combina com o tema rústico */
+  color: var(--cor-texto-escuro);
+}
+
+/* Estilo para o Título */
+h1 {
+  color: var(--cor-madeira-escura);
+  border-bottom: 2px solid var(--cor-verde-musgo);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Estilo para a Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais destacada, como uma tábua */
+  border: 1px solid var(--cor-madeira-escura);
+}
+
+/* Estilo para o Cabeçalho da Tabela (Madeira Escura) */
+thead {
+  background-color: var(--cor-madeira-escura);
+  color: var(--cor-texto-claro);
+  text-transform: uppercase;
+}
+
+/* Estilo para Células do Cabeçalho */
+th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borda branca sutil */
+}
+
+/* Estilo para Linhas do Corpo */
+tbody tr {
+  border-bottom: 1px solid #c8a29a; /* Marrom claro para o divisor */
+}
+
+/* Estilo para Linhas Pares (Listra) - Fundo Bege Claro */
+tbody tr:nth-of-type(even) {
+  background-color: var(--cor-fundo-claro); 
+}
+
+/* Estilo para Linhas Ímpares - Fundo Branco/Quase Branco */
+tbody tr:nth-of-type(odd) {
+  background-color: #ffffff; 
+}
+
+/* Estilo para Células do Corpo */
+td {
+  padding: 10px 15px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+/* Efeito ao passar o mouse sobre a linha (Verde Musgo Suave) */
+tbody tr:hover {
+  background-color: #c5e1a5; /* Um verde bem claro */
+  cursor: pointer;
+}
+
+/* Estilo para o link de cadastro (Destaque Verde) 
+a[href="/cliente/novo"] {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 20px;
+  background-color: var(--cor-verde-musgo);  Cor de fundo verde 
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+  border-radius: 6px; 
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: 2px solid var(--cor-madeira-escura);
+}*/
+
+a[href="/cliente/novo"]:hover {
+  background-color: #689f38; /* Verde um pouco mais escuro no hover */
+}
+/* Rodapé */
+footer {
+
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--cor-madeira-escura);
+}

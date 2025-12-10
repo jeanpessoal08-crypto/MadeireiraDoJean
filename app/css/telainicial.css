@@ -1,0 +1,197 @@
+/* Conteúdo do arquivo: app/css/telaInicial.css */
+
+/* Definição das Cores do Tema Madeireira */
+:root {
+  --cor-madeira-escura: #4e342e; /* Marrom escuro */
+  --cor-verde-musgo: #558b2f; /* Verde para destaque */
+  --cor-fundo-claro: #f5f5dc; /* Bege claro */
+  --cor-texto-claro: #ffffff;
+  --cor-texto-principal: #333333;
+}
+
+/* Reset e Estilos de Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif; /* Fonte rústica */
+  background-color: #1a1a1a; /* Fundo escuro */
+  color: var(--cor-texto-claro);
+  overflow-x: hidden;
+}
+
+/* --- Hero Section --- */
+.hero {
+  height: 100vh;
+  width: 100%;
+  /* Usando cores do tema na sobreposição: verde musgo e marrom escuro */
+  background: linear-gradient(
+    rgba(78, 52, 46, 0.9), /* Marrom escuro na sobreposição */
+    rgba(85, 139, 47, 0.7) /* Verde musgo na sobreposição */
+  ), 
+  url("https://images.unsplash.com/photo-1605733513597-4c8e3e5a9d8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Mudado de 'left' para 'relative' */
+  overflow: hidden;
+}
+
+/* Texto central */
+.hero-content {
+  text-align: center;
+  z-index: 10;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content .tag {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: var(--cor-verde-musgo); /* Tag em verde de destaque */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-content h1 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--cor-fundo-claro); /* Cor de tronco claro */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  color: #dddddd;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Botão Principal */
+.btn {
+  background: var(--cor-verde-musgo); /* Botão em verde */
+  color: var(--cor-texto-claro);
+  padding: 16px 36px;
+  border: 2px solid var(--cor-fundo-claro);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #689f38; /* Verde um pouco mais escuro */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Elementos decorativos (imagens de madeira) */
+.decor {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.decor-left {
+  top: 15%;
+  left: -5%; /* Move um pouco para fora */
+  transform: rotate(-10deg);
+}
+
+.decor-right {
+  bottom: 5%;
+  right: -5%; /* Move um pouco para fora */
+  transform: rotate(10deg);
+}
+
+.decor img {
+  max-width: 300px; /* Aumenta um pouco para destaque */
+  height: auto;
+  border-radius: 5px;
+  /* Aplica um filtro para harmonizar com o tema */
+  filter: grayscale(20%) brightness(0.7) contrast(1.2); 
+}
+
+/* --- Seção de Destaques --- */
+.highlights {
+  padding: 80px 20px;
+  background: #252525; /* Fundo levemente mais claro que o body */
+  text-align: center;
+}
+
+.highlights h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--cor-fundo-claro);
+  border-bottom: 3px solid var(--cor-madeira-escura);
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--cor-madeira-escura); /* Fundo do card em marrom escuro */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 30px 25px;
+  border: 2px solid var(--cor-verde-musgo);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+  background-color: #5d4037; /* Marrom levemente mais claro */
+}
+
+.card-icon {
+  font-size: 4rem;
+  color: var(--cor-dourado-destaque); /* Usa o dourado/amarelo para o ícone */
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  margin: 15px 0 10px;
+  color: var(--cor-fundo-claro);
+}
+
+.card p {
+  font-size: 1.05rem;
+  color: #CCCCCC;
+  line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+  background: #0d0d0d;
+  color: #777777;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--cor-madeira-escura);
+}
+.card-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}

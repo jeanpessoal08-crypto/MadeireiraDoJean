@@ -1,0 +1,54 @@
+/* Conteúdo do arquivo: app/css/Menu.css */
+
+/* Cores do Tema Madeireira */
+:root {
+  --cor-madeira-escura: #4e342e; /* Marrom escuro */
+  --cor-verde-musgo: #558b2f; /* Verde para destaque */
+  --cor-texto-claro: #ffffff;
+  --cor-dourado-destaque: #0feb21; /* Dourado/Amarelo, como um toque de metal */
+}
+
+/* Estilo para o Container Principal do Menu */
+.menu-container {
+  /* Substitui estiloMenu */
+  background-color: var(--cor-madeira-escura);
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  /* Sombra simulando uma peça robusta de madeira */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  font-family: 'Georgia', serif; 
+}
+
+/* Estilo para a Logo ou Nome da Empresa */
+.menu-logo {
+  /* Substitui estiloLogo */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  color: var(--cor-texto-claro); 
+  /*(--cor-dourado-destaque)*/
+  /* Adiciona uma pequena textura para o logo */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+/* Estilo para os Links de Navegação */
+.menu-link {
+  /* Substitui estiloLink */
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.1s;
+  /* Borda sutil para dar a aparência de botão/tábuas separadas */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Efeito ao Passar o Mouse sobre o Link (Verde Musgo) */
+.menu-link:hover {
+  background-color: var(--cor-verde-musgo); /* Cor de destaque ao interagir */
+  transform: translateY(-1px); /* Pequeno efeito de levantamento */
+}

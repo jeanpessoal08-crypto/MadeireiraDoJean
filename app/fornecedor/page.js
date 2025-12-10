@@ -1,5 +1,5 @@
 import { Fornecedor } from "../../database/tables";
-
+import "../css/tabelaCliente.css";
 async function ListagemFornecedores() {
   const fornecedores = await Fornecedor.findAll();
 

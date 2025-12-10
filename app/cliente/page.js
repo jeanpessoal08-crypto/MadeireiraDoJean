@@ -1,5 +1,5 @@
 import { Cliente } from "../../database/tables";
-
+import "../css/tabelaCliente.css";
 async function ListagemClientes() {
   const clientes = await Cliente.findAll();
 

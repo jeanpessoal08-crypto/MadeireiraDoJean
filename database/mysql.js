@@ -6,7 +6,7 @@ const mysql = new Sequelize({
   dialectModule: mysql2,
   host: 'localhost',
   port: 3306, 
-  database: 'madeireiraJ',
+  database: 'madeireiraBD',
   username: 'root',
   password: 'root'
 });

@@ -1,40 +1,25 @@
 // app/componentes/menu.js
-
+import "../app/css/menu.css";
 export default function Menu() {
-  const estiloMenu = {
-    backgroundColor: '#5D4037', // marrom escuro (madeira)
-    padding: '1rem 2rem',
-    display: 'flex',
-    gap: '1.5rem',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
-  };
-
-  const estiloLink = {
-    color: 'white',
-    textDecoration: 'none',
-    fontWeight: 'bold',
-    padding: '0.5rem 1rem',
-    borderRadius: '6px',
-    transition: 'background 0.3s',
-  };
-
-  const estiloLogo = {
-    fontSize: '1.5rem',
-    fontWeight: 'bold',
-    marginRight: '2rem',
-    color: '#FFD54F', // dourado claro (toque de destaque)
-  };
 
   return (
-    <nav style={estiloMenu}>
-      <span style={estiloLogo}>🪵 Madeireira J</span>
-      <a href="/cliente" style={estiloLink}>Clientes</a>
-      <a href="/funcionario" style={estiloLink}>Funcionários</a>
-      <a href="/fornecedor" style={estiloLink}>Fornecedores</a>
-      <a href="/produto" style={estiloLink}>Produtos</a>
-      <a href="/venda" style={estiloLink}>Vendas</a>
-    </nav>
+    // Usa a classe CSS 'menu-container' no lugar do estiloMenu
+    <div className="menu-container">
+      
+      
+      {/* Usa a classe CSS 'menu-logo' no lugar do estiloLogo */}
+      <span className="menu-logo">Madeireira do Jean</span> 
+      
+      {/* Exemplo de links usando a classe 'menu-link' */}
+      <a href="/" className="menu-link">Início</a>
+      <a href="/cliente" className="menu-link">Clientes</a>
+      <a href="/funcionario" className="menu-link">Funcionários</a>
+      <a href="/fornecedor" className="menu-link">Fornecedores</a>
+      <a href="/produtos" className="menu-link">Produtos</a>
+      <a href="/venda" className="menu-link">Vendas</a>
+      <a href="/ideias" className="menu-link">Explorar</a>
+
+    </div>
   );
 }
+
