@@ -35,9 +35,9 @@ body {
   width: 100%;
   
   /* Usa a URL que você forneceu e aplica a sobreposição rústica */
-  background: linear-gradient(
-    rgba(0, 2, 1, 0.75),  /* Marrom escuro na sobreposição (Mais escuro) */
-    rgba(78, 52, 46, 0.7)   /* Marrom escuro na sobreposição (Um pouco mais claro) */
+  background:( --cor-fundo-principal
+   /* rgba(0, 2, 1, 0.75),  Marrom escuro na sobreposição (Mais escuro) 
+    rgba(78, 52, 46, 0.7)    Marrom escuro na sobreposição (Um pouco mais claro) */
   ), 
   url("https://www.cbimadeiras.com.br/arquivo/galeria_foto/10.jpg"); 
 
@@ -100,7 +100,7 @@ body {
 }
 
 .btn:hover {
-  background: #689f38;
+  background: #689f38;;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }

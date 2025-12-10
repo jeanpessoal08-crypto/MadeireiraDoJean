@@ -1,0 +1,24 @@
+/* Container geral */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Rótulos */
+label {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* Campos*
