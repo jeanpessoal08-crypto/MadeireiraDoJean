@@ -1,6 +1,7 @@
+
 import { Cliente } from '../../../database/tables';
 import { redirect } from 'next/navigation';
-import "../css/cliente.css";
+
 
 
 async function insereCliente(formData) {
