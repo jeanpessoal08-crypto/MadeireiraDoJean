@@ -1,4 +1,6 @@
+ import "../app/css/telainicial.css";
 function Home() {
+
   return (
     <div>
 
@@ -172,6 +174,59 @@ footer {
   margin-top: 50px;
   border-top: 1px solid var(--cor-madeira-escura);
 }
+  /* --- Seção de Contato --- */
+.contact {
+  background: #1f1f1f;
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 2px solid var(--cor-madeira-escura);
+}
+
+.contact h2 {
+  font-size: 2.4rem;
+  color: var(--cor-fundo-claro);
+  margin-bottom: 25px;
+}
+
+.contact-desc {
+  color: #cccccc;
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.contact-info {
+  background: #2a2a2a;
+  border: 1px solid var(--cor-madeira-escura);
+  border-radius: 10px;
+  padding: 25px 20px;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  color: var(--cor-fundo-claro);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.contact-btn {
+  display: inline-block;
+  background: var(--cor-verde-musgo);
+  color: var(--cor-fundo-claro);
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid var(--cor-fundo-claro);
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #76d153;
+  transform: translateY(-3px);
+}
+
 `}</style>
 
       {/* Hero Section */}
@@ -180,40 +235,63 @@ footer {
       
         {/* Conteúdo central */}
         <div className="hero-content">
-          <div className="tag">MADEIREIRA EUCALIPTUS</div>
+          <div className="tag">MADEIREIRA DO JEAN</div>
           <h1>Líder em qualidade de madeira</h1>
           <p>Do corte à entrega, com respeito à floresta e ao seu projeto.</p>
-          <a href="/produto" className="btn">EXPLORAR PRODUTOS</a>
+          <a href="/ideias" className="btn">EXPLORAR</a>
         </div>
       </div>
 
-      {/* Seção de Destaques */}
-      <section className="highlights">
-        <h2>Por que escolher a Madeireira do Jean?</h2>
-        <div className="cards-grid">
-          <div className="card">
-            <div className="card-icon">🌲</div>
-            <h3>Origem Sustentável</h3>
-            <p>Trabalhamos apenas com madeira de reflorestamento e fornecedores certificados.</p>
-          </div>
+{/* Seção de Destaques */}
+<section className="highlights">
+  <h2>Por que escolher a Madeireira do Jean?</h2>
+  <div className="cards-grid">
+    <div className="card">
+      <div className="card-icon">
+        <img src="https://potencialflorestal.com.br/wp-content/uploads/2021/03/mitos-e-verdades-capa.png" alt="Origem Sustentável" />
+      </div>
+      <h3>Origem Sustentável</h3>
+      <p>Trabalhamos apenas com madeira de reflorestamento e fornecedores certificados.</p>
+    </div>
 
-          <div className="card">
-            <div className="card-icon">📏</div>
-            <h3>Medidas Personalizadas</h3>
-            <p>Corte sob demanda: tábuas, vigas, ripas e mais, no tamanho que você precisa.</p>
-          </div>
+    <div className="card">
+      <div className="card-icon">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZKPFU9KDRHGBlxXEJVqqjhadXm_0SLgts7Q&s" alt="Medidas Personalizadas" />
+      </div>
+      <h3>Medidas Personalizadas</h3>
+      <p>Corte sob demanda: tábuas, vigas, ripas e mais, no tamanho que você precisa.</p>
+    </div>
 
-          <div className="card">
-            
-            <div className="card-icon">🚚</div>
-            <h3>Entrega Rápida</h3>
-            <p>Entregamos em toda a região com agilidade e cuidado com sua carga.</p>
-          </div>
-        </div>
-    </section>
+    <div className="card">
+      <div className="card-icon">
+        <img src="https://thumbs.dreamstime.com/b/caminh%C3%A3o-carregado-com-os-feixes-de-madeira-21624169.jpg" alt="Entrega Rápida" />
+      </div>
+      <h3>Entrega Rápida</h3>
+      <p>Entregamos em toda a região com agilidade e cuidado com sua carga.</p>
+    </div>
+  </div>
+</section>
+{/* Seção de Contato */}
+<section className="contact">
+  <h2>Entre em Contato</h2>
+
+  <p className="contact-desc">
+    Fale com nossa equipe para solicitações de orçamento, dúvidas sobre materiais, 
+    prazos de entrega e suporte técnico especializado. Estamos sempre prontos para ajudar!
+  </p>
+
+  <div className="contact-info">
+    <p><strong>Telefone:</strong> (33) 99999-9999</p>
+    <p><strong>WhatsApp:</strong> (33) 98888-8888</p>
+    <p><strong>Email:</strong> madeireiradoJean@gmail.com</p>
+  </div>
+
+  <a href="tel:+55(33)998443423" className="contact-btn">Entrar em Contato</a>
+</section>
 
       
     </div>
+    
   );
 }
 

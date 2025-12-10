@@ -75,20 +75,28 @@ tbody tr:hover {
   cursor: pointer;
 }
 
-/* Estilo para o link de cadastro (Destaque Verde) */
+/* Estilo para o link de cadastro (Destaque Verde) 
 a[href="/cliente/novo"] {
   display: inline-block;
   padding: 10px 18px;
   margin-bottom: 20px;
-  background-color: var(--cor-verde-musgo); /* Cor de fundo verde */
+  background-color: var(--cor-verde-musgo);  Cor de fundo verde 
   color: var(--cor-texto-claro);
   text-decoration: none;
   border-radius: 6px; 
   font-weight: bold;
   transition: background-color 0.3s;
   border: 2px solid var(--cor-madeira-escura);
-}
+}*/
 
 a[href="/cliente/novo"]:hover {
   background-color: #689f38; /* Verde um pouco mais escuro no hover */
+}
+/* Rodapé */
+footer {
+
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--cor-madeira-escura);
 }

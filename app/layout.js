@@ -1,7 +1,7 @@
 import Menu from "../componentes/menu";
 
 export const metadata = {
-  title: 'Madeireira J',
+  title: 'Madeireira do Jean',
   description: 'Sistema de gestão para Madeireira J',
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer>
-          <p>© Madeireira J - — Construindo o futuro com raízes sólidas.{new Date().getFullYear()}</p>
+          <p>© Madeireira do Jean - Construindo o futuro com raízes sólidas.{new Date().getFullYear()}</p>
         </footer>
       </body>
     </html>
