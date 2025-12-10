@@ -18,7 +18,7 @@ export default function Menu() {
       <a href="/produtos" className="menu-link">Produtos</a>
       <a href="/venda" className="menu-link">Vendas</a>
       <a href="/ideias" className="menu-link">Explorar</a>
-
+      
     </div>
   );
 }
